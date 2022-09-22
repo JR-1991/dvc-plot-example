@@ -6,9 +6,9 @@ stages:
     params:
       params.yaml:
         RunExperiment:
-          num_exps: 40
-          seed: 100
+          num_exps: 30
+          seed: 20
     outs:
     - path: nodes/RunExperiment/plot.csv
-      md5: fc485a543ab6141fd0c7d25d0bb0e847
-      size: 1019
+      md5: 38bd5694c08e53042d5d5a4c50f35af3
+      size: 758
