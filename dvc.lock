@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  RunExperiment:
+    cmd: "python3 -c \"from run_experiment import RunExperiment; RunExperiment.load(name='RunExperiment').run_and_save()\"\
+      \ "
+    params:
+      params.yaml:
+        RunExperiment:
+          num_exps: 40
+          seed: 100
+    outs:
+    - path: nodes/RunExperiment/plot.csv
+      md5: fc485a543ab6141fd0c7d25d0bb0e847
+      size: 1019

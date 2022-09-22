@@ -1,0 +1,11 @@
+stages:
+  RunExperiment:
+    cmd: "python3 -c \"from run_experiment import RunExperiment; RunExperiment.load(name='RunExperiment').run_and_save()\"\
+      \ "
+    params:
+    - RunExperiment
+    plots:
+    - nodes/RunExperiment/plot.csv:
+        cache: false
+        x: experiment
+        y: error

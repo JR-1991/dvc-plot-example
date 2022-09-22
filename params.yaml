@@ -1,0 +1,3 @@
+RunExperiment:
+    num_exps: 40
+    seed: 100
